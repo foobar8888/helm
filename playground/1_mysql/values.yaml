@@ -1,0 +1,11 @@
+auth:
+  rootPassword: "password"
+image:
+  pullPolicy: Always
+
+# helm install demodb bitnami/mysql --values /path/to/values.yaml
+# helm install demodb bitnami/mysql --set auth.rootPassword=password (not recommended)
+
+# helm update demodb bitnami/mysql --reuse-values
+
+# helm uninstall demodb --keep-history (will remove history in kubectl get secrets)
